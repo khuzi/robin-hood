@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 import SnacksShowcase from "../components/snacksShowcase/snacksShowcase";
 import Sample from "../components/sample/sample";
@@ -10,6 +11,10 @@ import Subscribe from "../components/subscribe/subscribe";
 const snacks = () => {
   return (
     <>
+      <Head>
+        <title>Robinhood Snacks</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <SnacksShowcase />
       <Sample />
       <Podcast />

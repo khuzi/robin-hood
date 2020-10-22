@@ -63,4 +63,12 @@
   .text2 {
     max-width: 100%;
   }
+  .bottomPic {
+    padding: 2rem 0;
+  }
+  .bottomPic img {
+    position: unset;
+    display: block;
+    margin: auto;
+  }
 }
