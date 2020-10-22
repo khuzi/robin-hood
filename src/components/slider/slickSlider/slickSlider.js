@@ -81,3 +81,5 @@ class CustomSlider extends Component {
 }
 
 export default CustomSlider;
+
+

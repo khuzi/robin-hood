@@ -1,0 +1,66 @@
+.about {
+  background: #f7f8fc;
+  position: relative;
+}
+
+.content {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.heading {
+  margin: auto;
+  max-width: 350px;
+}
+.heading h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.para {
+  max-width: 75%;
+  margin: auto;
+}
+
+.para p {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.content2 {
+  display: flex;
+  padding: 0 5rem;
+  justify-content: space-around;
+}
+
+.text1 {
+  max-width: 40%;
+}
+
+.text2 {
+  max-width: 30%;
+}
+
+.bottomPic {
+  padding-top: 8rem;
+}
+
+.bottomPic img {
+  position: absolute;
+  bottom: -20%;
+}
+
+@media (max-width: 800px) {
+  .content2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .text1 {
+    max-width: 100%;
+  }
+
+  .text2 {
+    max-width: 100%;
+  }
+}

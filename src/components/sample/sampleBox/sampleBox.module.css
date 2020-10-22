@@ -1,0 +1,35 @@
+.img img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.title h3 {
+  color: white;
+  padding-left: 0.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.tag {
+    margin-top: 0.5rem;
+}
+
+
+.tag p {
+  margin: 0;
+}
+
+
+@media (max-width: 600px) {
+  .img img {
+    width: 300px;
+  }
+}

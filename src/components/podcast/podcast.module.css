@@ -1,0 +1,39 @@
+.podcast {
+  margin: 6rem 0;
+}
+
+.heading {
+  margin: auto;
+  max-width: 350px;
+}
+
+.heading h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.para {
+  max-width: 50%;
+  margin: auto;
+}
+
+.para p {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.item {
+  padding: 0 0.5rem;
+}
+
+.item img {
+  width: 180px;
+}

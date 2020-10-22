@@ -1,0 +1,49 @@
+.subscribe {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.heading h2 {
+  text-align: center;
+}
+
+.inp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f8fc;
+  max-width: 300px;
+  margin: 2rem auto;
+  border-radius: 50px;
+}
+
+.inp input {
+  outline: none;
+  border: 1px solid #f7f8fc;
+  padding: 1rem;
+  border-radius: 25px;
+  width: 80%;
+  background: #f7f8fc;
+}
+
+.inp i {
+  color: rgb(33, 206, 153);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.inp input:focus {
+  border: 0.5px solid #aaa;
+}
+
+.socialLinks {
+  display: flex;
+  width: 8rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin: auto;
+}
+.socialLinks i {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

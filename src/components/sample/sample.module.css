@@ -1,0 +1,26 @@
+.sample {
+  background: rgb(33, 206, 153);
+}
+
+.heading h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.btn {
+  text-align: center;
+}
+
+.btn button {
+  color: rgb(33, 206, 153);
+  background: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  margin: 2rem 0;
+  cursor: pointer;
+}

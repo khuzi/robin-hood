@@ -1,7 +1,6 @@
 .showcase {
   width: 100%;
-  background-color: rgb(195, 245, 60);
-  margin-top: 4rem;
+  margin-top: 8rem;
   padding-bottom: 2rem;
 }
 
@@ -16,35 +15,63 @@
   color: var(--pri-txt-color);
   font-size: 40px;
   margin: 0;
+  line-height: 1.2;
 }
 
-.text h3 {
-  max-width: 80%;
+.text h5 {
+  max-width: 100%;
   color: var(--pri-txt-color);
-  font-size: 24px;
+  font-size: 16px;
+  margin-top: 1rem;
 }
 
 .signBtn button {
   border: none;
   outline: none;
-  background: var(--pri-txt-color);
+  background: rgb(33, 206, 153);
   color: #fff;
   padding: 1rem;
   width: 8rem;
   border-radius: 25px;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.imgBox {
+  overflow: hidden;
 }
 
 .imgBox img {
   width: 250px;
   display: block;
-  margin: 3rem auto 0;
+  height: 400px;
+  margin: 5rem auto -6rem;
+  transform: rotate(10deg);
+}
+
+.newsLetter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newsLetter input {
+  padding: 1rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: #f7f8fc;
+  width: 100%;
+}
+
+.newsLetter .inp {
+  flex-grow: 8;
 }
 
 @media (max-width: 960px) {
   .showcase {
     height: 100%;
+    margin-top: 8rem;
   }
   .content {
     margin-top: 0;
@@ -55,7 +82,5 @@
   .signBtn {
     text-align: center;
   }
-  .imgBox img {
-    margin: 2rem auto;
-  }
 }
+  
