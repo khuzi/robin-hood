@@ -2,7 +2,7 @@ import React from "react";
 
 import { Grid } from '@material-ui/core';
 
-import NewsBox from "../sample/sampleBox/sampleBox";
+import NewsBox from "../sample/sampleBox/SampleBox";
 
 import classes from "./news.module.css";
 

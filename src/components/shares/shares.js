@@ -3,7 +3,7 @@ import React from "react";
 import { Grid, Button } from "@material-ui/core";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 
-import ShareBox from "./shareBox/shareBox";
+import ShareBox from "./shareBox/ShareBox";
 
 import classes from "./shares.module.css";
 

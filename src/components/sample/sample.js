@@ -2,7 +2,7 @@ import React from "react";
 
 import { Grid } from "@material-ui/core";
 
-import SampleBox from "./sampleBox/sampleBox";
+import SampleBox from "./sampleBox/SampleBox";
 
 import classes from "./sample.module.css";
 
