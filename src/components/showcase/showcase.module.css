@@ -44,16 +44,17 @@
 
 @media (max-width: 960px) {
   .showcase {
-    height: 100%;
+    margin: 0;
   }
   .content {
-    margin-top: 0;
+    margin-top: 5rem;
   }
   .text h3 {
     max-width: 100%;
   }
-  .signBtn {
+  .signBtn button{
     text-align: center;
+    width: 100%;
   }
   .imgBox img {
     margin: 2rem auto;

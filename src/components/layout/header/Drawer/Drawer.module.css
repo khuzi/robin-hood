@@ -1,0 +1,21 @@
+.list {
+  width: 300;
+}
+.fullList {
+  width: auto;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.menuButton {
+  color: #000;
+  display: none;
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

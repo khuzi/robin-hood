@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import { Button, Grid, Hidden } from "@material-ui/core";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
@@ -46,13 +47,25 @@ const Footer = () => {
             <Grid item xs={12} md={4} lg={3}>
               <ul>
                 <li>Learn</li>
-                <li>Support</li>
-                <li>Snacks</li>
+                <li>
+                  <Link href="/support">
+                    <a>Support</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/snacks">
+                    <a>Snacks</a>
+                  </Link>
+                </li>
               </ul>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <ul>
-                <li>Abouts</li>
+                <li>
+                  <Link href="/about">
+                    <a>About us</a>
+                  </Link>
+                </li>
                 <li>Careers</li>
                 <li>Company News</li>
                 <li>
