@@ -5,6 +5,8 @@ import { Grid } from "@material-ui/core";
 
 import SupportBox from "../components/supportBox/supportBox";
 
+import classes from "../styles/support.module.css";
+
 const data = [1, 2, 3, 4, 5, 6, 7];
 
 const support = () => {
@@ -16,34 +18,12 @@ const support = () => {
       </Head>
       <div className="mainWarper">
         <Grid container style={{ marginTop: "5rem" }}>
-          <Grid item xs={12}>
-            <style jsx>{`
-              h1 {
-                margin: 0;
-              }
-            `}</style>
+          <Grid item xs={12} className={classes.heading}>
             <h1>Hello!</h1>
             <h1>How can we help?</h1>
           </Grid>
           <Grid item xs={12}>
-            <style jsx>
-              {`
-                div {
-                  position: relative;
-                  width: 60%;
-                  display: flex;
-                  align-items: center;
-                  margin: 2rem 0;
-                }
-                input {
-                  width: 100%;
-                  padding: 0.8rem 0.8rem 0.8rem 2rem;
-                  border-radius: 25px;
-                  outline: none;
-                }
-              `}
-            </style>
-            <div>
+            <div className={classes.inp}>
               <i
                 style={{ position: "absolute", left: "10px" }}
                 className="fa fa-search"
@@ -54,6 +34,7 @@ const support = () => {
                   position: "absolute",
                   right: "15px",
                   cursor: "pointer",
+                  display: "none",
                 }}
                 className="fas fa-times"
               ></i>

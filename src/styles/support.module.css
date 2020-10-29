@@ -1,0 +1,29 @@
+.heading h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.cross {
+  display: block !important;
+}
+
+.inp {
+  position: relative;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+.inp input {
+  width: 100%;
+  padding: 1.2rem 1.2rem 1.2rem 2rem;
+  border-radius: 25px;
+  outline: none;
+  background: rgb(228, 233, 237);
+  border: none;
+  transition: all 0.3s ease-in;
+}
+.inp input:focus {
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

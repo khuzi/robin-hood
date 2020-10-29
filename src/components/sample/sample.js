@@ -6,7 +6,7 @@ import SampleBox from "./sampleBox/SampleBox";
 
 import classes from "./sample.module.css";
 
-const Sample = () => {
+const Sample = ({ blogs }) => {
   return (
     <div className={classes.sample}>
       <div className="mainWarper">
@@ -18,9 +18,15 @@ const Sample = () => {
           </Grid>
         </Grid>
         <Grid container justify="space-around" spacing={2}>
-          <SampleBox />
-          <SampleBox />
-          <SampleBox />
+          {blogs.map((blog) => (
+            <SampleBox
+              title={blog.title}
+              date={blog.date}
+              src={"http://localhost:1337" + blog.img[0].url}
+              id={blog.id}
+              key={blog.id}
+            />
+          ))}
         </Grid>
         <Grid container>
           <Grid item xs={12}>

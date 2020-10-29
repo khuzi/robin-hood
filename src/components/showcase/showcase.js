@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Grid, TextField } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 import classes from "./showcase.module.css";
 
@@ -15,7 +15,6 @@ const Showcase = () => {
                 <div className={classes.heading}>
                   <h1>Investing for</h1>
                   <h1>Everyone</h1>
-                  <TextField variant="outlined" label="Name" />
                 </div>
                 <div className={classes.text}>
                   <h3>

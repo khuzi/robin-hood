@@ -48,13 +48,6 @@ const Slider = () => {
     }
   };
 
-  useEffect(() => {
-    if (slideNum === 1) {
-      statusDispatch({ type: "LEARN" });
-      console.log("Status = ", statusState);
-    }
-  }, []);
-
   return (
     <div className={classes.slider}>
       <Hidden only={["lg", "xl"]}>
