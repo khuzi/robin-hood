@@ -12,7 +12,6 @@ const SampleBox = ({ title, src, date, id }) => {
         <img src={src} />
       </div>
       <div className={classes.title}>
-        <i className="fas fa-cart-plus"></i>
         <Link href="/snacks/[id]" as={"/snacks/" + id}>
           <a>
             <h3>{title}</h3>

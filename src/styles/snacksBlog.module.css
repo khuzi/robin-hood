@@ -24,6 +24,27 @@
 
 .heyText p {
   font-size: 14px;
+  line-height: 1.6;
+}
+
+.keyword {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: #e9faf5;
+  color: rgb(33, 206, 153);
+  width: 5rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.keyword h3 {
+  margin: 0;
+}
+
+.title h1 {
+  margin-top: 0.5rem;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 @media (max-width: 800px) {
