@@ -31,7 +31,7 @@ export default function Bost({ postData }) {
         <p>{postData.created}</p>
       </div>
       <img
-        src={"http://localhost:1337" + postData.img.url}
+        src={"https://gentle-inlet-94803.herokuapp.com" + postData.img.url}
         style={{ height: "100%", width: "100%" }}
       />
       <h3>Hey Snackers</h3>
@@ -108,7 +108,9 @@ export async function getStaticProps({ query, params }) {
   const { API_URL } = process.env;
   const { id } = query || params;
 
-  const res = await fetch(`http://localhost:1337/snacksblogs/${id}`);
+  const res = await fetch(
+    `https://gentle-inlet-94803.herokuapp.com/snacksblogs/${id}`
+  );
   const postData = await res.json();
 
   return {

@@ -22,7 +22,7 @@ const Sample = ({ blogs }) => {
             <SampleBox
               title={blog.title}
               date={blog.date}
-              src={"http://localhost:1337" + blog.img.url}
+              src={"https://gentle-inlet-94803.herokuapp.com" + blog.img.url}
               id={blog.id}
               key={blog.id}
             />
