@@ -16,6 +16,9 @@ export default function Bost({ postData }) {
 
   const { bloggs, snackinlist } = postData;
   const { snacklist, end } = snackinlist;
+
+  console.log(process.env.API_URL);
+
   return (
     <section className={classes.blog}>
       <Head>
@@ -28,7 +31,7 @@ export default function Bost({ postData }) {
         <p>{postData.created}</p>
       </div>
       <img
-        src={"http://localhost:1337" + postData.img[0].url}
+        src={"http://localhost:1337" + postData.img.url}
         style={{ height: "100%", width: "100%" }}
       />
       <h3>Hey Snackers</h3>
@@ -102,6 +105,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ query, params }) {
+  const { API_URL } = process.env;
   const { id } = query || params;
 
   const res = await fetch(`http://localhost:1337/snacksblogs/${id}`);
@@ -113,16 +117,3 @@ export async function getStaticProps({ query, params }) {
     },
   };
 }
-
-/*
-export async function getServerSideProps({ query }) {
-  const { id } = query;
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts/" + id);
-  const postData = await res.json();
-  return {
-    props: {
-      postData,
-    },
-  };
-}
-*/
