@@ -33,7 +33,9 @@ const snacks = ({ blogs }) => {
 export default snacks;
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:1337/snacksblogs");
+  const res = await fetch(
+    "https://gentle-inlet-94803.herokuapp.com/snacksblogs"
+  );
   const blogs = await res.json();
 
   return {
