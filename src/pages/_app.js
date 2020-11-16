@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
+import PropTypes from "prop-types";
 
 import Layout from "../components/layout/Layout";
 
@@ -47,5 +48,10 @@ function MyApp({ Component, pageProps }) {
     </Layout>
   );
 }
+
+MyApp.propTypes = {
+  Component: PropTypes.elementType.isRequired,
+  pageProps: PropTypes.object.isRequired,
+};
 
 export default MyApp;
